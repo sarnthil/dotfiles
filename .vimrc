@@ -162,7 +162,12 @@ let g:line_no_indicator_chars = [' ', '⠁', '⠉', '⠋', '⠛', '⠟', '⠿', 
 let g:rooter_silent_chdir = 1
 let g:SuperTabDefaultCompletionType = 'context'
 let g:switch_mapping = '\'
-let g:vimtex_view_general_viewer = 'okular'
+if system('uname') =~ "Darwin"
+    let g:vimtex_view_method = 'skim'
+    let g:vimtex_view_automatic = 1
+else
+    let g:vimtex_view_general_viewer = 'okular'
+endif
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_view_general_options_latexmk = '--unique'
 let g:vimtex_fold_enabled = 0
