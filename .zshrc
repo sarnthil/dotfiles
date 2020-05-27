@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 # PATH adjustments: add scripts and wd
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home"
+export PATH="$PATH:/usr/local/texlive/2019/bin/x86_64-darwin"
 
 unset MAILCHECK
 
@@ -108,3 +109,4 @@ if [ -f ~/.zshrc.$hostname ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(pyenv init -)"

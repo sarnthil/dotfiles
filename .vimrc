@@ -393,6 +393,7 @@ nnoremap YQ ZQ
 nnoremap YY ZZ
 nnoremap <silent> <leader>lv :VimtexView<cr>
 nnoremap <silent> <leader>ll :VimtexCompile<cr>
+nnoremap <leader>wtf A  # <C-V>U0CA0_<C-V>U0CA0
 
 vnoremap <expr> <down> DVB_Drag('down')
 vnoremap <expr> <left> DVB_Drag('left')
