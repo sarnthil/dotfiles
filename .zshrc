@@ -50,9 +50,9 @@ lookup() {dig -x `dig +short $*`}
 p() {
     if [ -z "$*" ]
     then
-        ipython
+        python -m IPython
     else
-        python3 -q $*
+        python -q $*
     fi
 }
 take() {
