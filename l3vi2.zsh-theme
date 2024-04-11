@@ -105,8 +105,8 @@ prompt_status() {
 
 prompt_l3vi() {
   local username
-  if [[ "$USER" == "${DEFAULT_USER:-l3viathan}" ]]; then
-    username="${USER_EMOJI:-🦊}"
+  if [[ "$USER" == "${DEFAULT_USER:-sarnthil}" ]]; then
+    username="${USER_EMOJI:-🐐}"
   else
     username="$USER"
   fi

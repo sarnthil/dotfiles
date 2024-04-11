@@ -85,3 +85,5 @@ fi
 [ -f ~/.gitbranch.zsh ] && source ~/.gitbranch.zsh
 
 _evalcache pyenv init -
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
