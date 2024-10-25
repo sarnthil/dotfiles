@@ -5,7 +5,8 @@ set autoindent                  " automatically indent if necessary
 set backspace=2                 " backspace over lines
 set backupdir=~/.vim/backup     " write backupfiles to central dir
 set background=dark
-" set cursorline                " highlight cursor line. Taken out: lag
+set cursorline                  " highlight cursor line
+set cursorcolumn                " highlight cursor column
 set encoding=utf-8              " UTF-8 always, everywhere
 set noerrorbells visualbell t_vb=  " shut up
 set expandtab                   " no literal tab characters
@@ -447,6 +448,7 @@ nnoremap <silent> <leader>cscs :set opfunc=SnakeCase<cr>0g@$
 nnoremap <silent> <leader>cc :set opfunc=CamelCase<cr>g@
 nnoremap <silent> <leader>ccc :set opfunc=CamelCase<cr>0g@$
 nnoremap <silent> <leader>J <C-u>call BreakHere()<cr>
+nnoremap <silent> <leader>u :Rg <C-R><C-W><cr>
 " quick rot13 all
 nnoremap <leader>? ggg?G``
 nnoremap YQ ZQ
