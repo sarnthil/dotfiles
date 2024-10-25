@@ -11,6 +11,7 @@ source ~/l3vi2.zsh-theme
 setopt auto_cd interactive_comments promptsubst
 
 unset MAILCHECK
+export EDITOR=vim
 
 # Aliasses
 alias ls='ls --color' alias ll='ls --color -lh' l='ls --color -lah'
